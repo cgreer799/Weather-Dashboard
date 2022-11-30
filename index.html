@@ -9,10 +9,30 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Weather Dashboard</title>
 </head>
-
+<header>
+<h1>Weather Dashboard</h1>
+</header>
 <body>
-
-
+  <main>
+    <section id = searchsection>
+      <h2>Search for a City:</h2>
+      <input type="text" id="searchinput" placeholder="Houston">
+      <button id="searchbutton">Search</button>
+      <div class="button-list"></div>
+    </section>
+    <section id="currentforecastsection"></section>
+    <section id="fivedayforecastsection">
+      <h3>5_Day Forecast:</h3>
+      <div class="row">
+        <div class="column">
+          <div id= "fivedayforecastcard1" class="card"></div>
+          <div id= "fivedayforecastcard2" class="card"></div>
+          <div id= "fivedayforecastcard3" class="card"></div>
+          <div id= "fivedayforecastcard4" class="card"></div>
+          <div id= "fivedayforecastcard5" class="card"></div>
+        </div>
+    </section>
+  </main>
 
 </body>
 

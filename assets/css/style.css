@@ -1,0 +1,23 @@
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+.row {margin: 0 -5px;}
+
+.card {padding: 5px;
+    text-align: left;
+    background-color:rgb(50, 50, 79);   
+}
+.button-list button{
+    background-color: gray;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0px 0px 0px ;
+}
+.button-list button:hover {
+    background-color: rgb(213, 213, 213);
+}
