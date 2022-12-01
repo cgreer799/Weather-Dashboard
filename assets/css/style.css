@@ -1,8 +1,11 @@
+p {
+    margin-bottom: 10px;
+}
 .column {
     float: left;
     width: 25%;
     padding: 0 10px;
-  }
+}
   
 .row {margin: 0 -5px;}
 
@@ -20,4 +23,8 @@
 }
 .button-list button:hover {
     background-color: rgb(213, 213, 213);
+}
+.topsection{
+    border: 1px solid black;
+    margin-left: 30%;
 }
