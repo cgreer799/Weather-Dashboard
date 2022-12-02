@@ -16,10 +16,16 @@
   <main>
     <section id = searchsection>
       <h2>Search for a City:</h2>
-      <input type="text" id="searchinput" placeholder="Houston">
-      <button id="searchbutton">Search</button>
+      <input type="text" id="searchinput" placeholder="Houston" class="searchcity">
+      <div>
+      <button id="searchbutton" class="btn">Search</button>
+      </div>
       <div id="searchhistory" class="button-list">
-
+        <button id="searchhistorybutton1">Search</button>
+        <button id="searchhistorybutton2">Search</button>
+        <button id="searchhistorybutton3">Search</button>
+        <button id="searchhistorybutton4">Search</button>
+        <button id="searchhistorybutton5">Search</button>
       </div>
     </section>
     <section id="currentforecastsection" class="topsection">
@@ -72,7 +78,8 @@
   </main>
 
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="./assets/js/script.js"></script>
 
 </html>
