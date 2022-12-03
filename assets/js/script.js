@@ -66,8 +66,9 @@ var currentforecast = function (apiinfo, city){
     console.log(forecast);
     console.log(f);
     console.log(currdate);
+    console.log("Icon: "+f[0].weather[0].icon);
     $('#city-date').text(city+" "+currdate)
-    $('#icon').prop('src',"https://openweathermap.org/img/w/"+ f[0].Weather[0].icon +".png"); 
+    $('#icon').prop('src',"https://openweathermap.org/img/w/"+ f[0].weather[0].icon +".png"); 
     $('#currtemp').text("Temp: " +f[0].main.temp+"°F");
     $('#currwind').text("Wind: " +f[0].wind.speed+" MPH");
     $('#currhumidity').text("Humidity: "+ f[0].main.humidity+" %");
