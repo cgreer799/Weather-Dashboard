@@ -22,7 +22,7 @@ var populateSearches = function(){
 };
 var search = function (city){
     console.log(city);
-    var apiurl = 'http://api.openweathermap.org/geo/1.0/direct?q='+city+',US&limit=5&units=imperial&appid=' + apikey;
+    var apiurl = 'https://api.openweathermap.org/geo/1.0/direct?q='+city+',US&limit=5&units=imperial&appid=' + apikey;
     fetch(apiurl)
     .then(function (response){
         if (response.ok) {
@@ -43,7 +43,7 @@ var getforecast = function (location){
     let lon = location[0].lon;
     console.log(lat);
     console.log(lon);
-    var apiurl = 'http://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=' + apikey;
+    var apiurl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&units=imperial&appid=' + apikey;
     fetch(apiurl)
     .then(function (response){
         if (response.ok) {
@@ -67,7 +67,7 @@ var currentforecast = function (apiinfo, city){
     console.log(f);
     console.log(currdate);
     $('#city-date').text(city+" "+currdate)
-    $('#icon').prop('src',"http://openweathermap.org/img/w/04n.png"); // + f[0].Weather[0].icon + "
+    $('#icon').prop('src',"https://openweathermap.org/img/w/"+ f[0].Weather[0].icon +".png"); 
     $('#currtemp').text("Temp: " +f[0].main.temp+"°F");
     $('#currwind').text("Wind: " +f[0].wind.speed+" MPH");
     $('#currhumidity').text("Humidity: "+ f[0].main.humidity+" %");
